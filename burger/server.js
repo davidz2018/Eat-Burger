@@ -4,7 +4,7 @@ var bodyParser = require("body-parser");
 var PORT = process.env.PORT || 8080;
 
 var app = express();
-app.use(bodyParder.urlencoder({ extended: true}));
+app.use(bodyParser.urlencoder({ extended: true}));
 app.use(bodyParser.json());
 
 var exhbs = require("express-handlebars");
